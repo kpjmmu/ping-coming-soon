@@ -1,0 +1,154 @@
+:root {
+    /* fonts */
+    --fs-xl: 3rem;
+    --fs-l: 1.375rem;
+    --fs-m: 1.25rem;
+    --fs-base: 1rem;
+    --fs-sm: .75rem;
+    --fs-xs: .625rem;
+
+    --fw-light: 300;
+    --fw-base: 400;
+    --fw-bold: 600;
+
+    --ff-primary: 'Libre Franklin', sans-serif;
+
+    /* colors */
+    --clr-primary: #15202A;
+    --clr-secondary: #969696;
+    --clr-email: #B8C7ED;
+    --clr-btn: #fff;
+    --clr-blue: #4C7BF3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-primary);
+    text-align: center;
+    padding: 5.0625rem 1.75rem 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ============
+   Typography
+   ============*/
+
+.title {
+    color: var(--clr-primary);
+    font-size: var(--fs-l);
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+}
+
+.title-accent {
+    color: var(--clr-secondary);
+    font-weight: var(--fw-base);
+}
+
+.sub-title {
+    color: var(--clr-primary);
+    font-size: var(--fs-sm);
+    margin-bottom: 2rem;
+}
+
+/* ============
+   Layout
+   ============*/
+
+/* ============
+   Main Content
+   ============*/
+.logo {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.email-form {
+    margin-bottom: 4.5rem;
+}
+
+.email-input {
+    display: block;
+    font-size: var(--fs-sm);
+    font-family: inherit;
+    font-weight: --fw-light;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: .625rem;
+    padding: .625rem 2rem;
+    border: 1px solid var(--clr-email);
+    border-radius: 500px;
+}
+
+.email-input::placeholder {
+    color: var(--clr-email);
+}
+
+.btn {
+    color: var(--clr-btn);
+    background: var(--clr-blue);
+    border: none;
+    border-radius: 500px;
+    font-size: var(--fs-sm);
+    font-family: inherit;
+    font-weight: var(--fw-bold);
+    width: 90%;
+    padding: .75rem;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .2;
+}
+
+.main-img {
+    margin-bottom: 7.5rem;
+}
+
+/* ============
+   Footer
+   ============*/
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .75rem;
+    margin-bottom: 1.75rem;
+}
+
+.social-links a {
+    color: var(--clr-blue);
+    display: block;
+    border: 1px solid #B8C7ED;
+    border-radius: 100%;
+    padding: .5rem;
+}
+
+.social-links a:first-child {
+    padding: .5rem .75rem;
+}
+
+.social-links a:last-child {
+    padding: .5rem .625rem;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    background: var(--clr-blue);
+    color: #fff;
+}
+
+.copyright {
+    font-size: var(--fs-xs);
+    color: var(--clr-secondary);
+}
