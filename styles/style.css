@@ -30,7 +30,7 @@
 body {
     font-family: var(--ff-primary);
     text-align: center;
-    padding: 5.0625rem 1.75rem 0;
+    padding: 5.0625rem 1.75rem 1rem;
 }
 
 img {
@@ -107,10 +107,13 @@ img {
 
 .btn:hover,
 .btn:focus {
+    cursor: pointer;
     opacity: .2;
 }
 
 .main-img {
+    max-width: 640px;
+    margin: 0 auto;
     margin-bottom: 7.5rem;
 }
 
@@ -144,6 +147,7 @@ img {
 
 .social-links a:hover,
 .social-links a:focus {
+    cursor: pointer;
     background: var(--clr-blue);
     color: #fff;
 }
@@ -151,4 +155,28 @@ img {
 .copyright {
     font-size: var(--fs-xs);
     color: var(--clr-secondary);
+}
+
+@media screen and (min-width: 450px) {
+
+    /* ============
+       Typography
+       ============*/
+
+    .title {
+        font-size: var(--fs-xl);
+    }
+
+    .sub-title {
+        font-size: var(--fs-m);
+        margin-bottom: 2.5rem;
+    }
+
+    /* ============
+       Main Content
+       ============*/
+    .logo {
+        margin-bottom: 2.5rem;
+    }
+
 }
