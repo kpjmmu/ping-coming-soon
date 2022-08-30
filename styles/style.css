@@ -146,11 +146,11 @@ footer {
     display: block;
     border: 1px solid #B8C7ED;
     border-radius: 100%;
-    padding: .5rem;
+    padding: .5rem .65rem;
 }
 
 .social-links a:first-child {
-    padding: .5rem .75rem;
+    padding: .5rem .775rem;
 }
 
 .social-links a:last-child {
